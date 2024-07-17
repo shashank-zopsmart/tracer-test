@@ -64,7 +64,7 @@ jobs:
         uses: azure/aks-set-context@v3
         with:
           resource-group: ${{ env.resource_group }}
-          cluster-name: ${{env.cluster_name }}
+          cluster-name: ${{env.CLUSTER_NAME }}
           admin: true
 
       - name: Setup kubectl
